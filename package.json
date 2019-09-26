@@ -1,0 +1,19 @@
+{
+  "name": "customer-abd-cluster-1",
+  "license": "UNLICENSED",
+  "author": "adam.tistler@rackspace.com",
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^8.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "@k8s-ms-modules-demo/eks": "~0.4.1",
+    "@pulumi/aws": "^1.0.0",
+    "@pulumi/awsx": "^0.18.10",
+    "@pulumi/eks": "^0.18.14",
+    "@pulumi/pulumi": "^1.0.0"
+  }
+}
