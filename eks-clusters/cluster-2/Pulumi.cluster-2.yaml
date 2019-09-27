@@ -1,0 +1,13 @@
+config:
+  ManagedServices/ExternalDns/Chart:clusterName: atistler
+  ManagedServices/ExternalDns/Chart:externalDNSCPULimit: 50m
+  ManagedServices/ExternalDns/Chart:externalDNSCPURequest: 50m
+  ManagedServices/ExternalDns/Chart:externalDNSRAMLimit: 50Mi
+  ManagedServices/ExternalDns/Chart:externalDNSRAMRequest: 10Mi
+  ManagedServices/ExternalDns/Chart:patch: '{ "ops": [ { "op": "replace", "path":
+    "/provider", "value": "aws" } ] }'
+  aws:region: us-east-1
+  k8s-ms-customer-demo:eksClusterName: k8s-ms-demo-eksCluster-bd02c8b
+  ManagedServices/Dex/Chart:clusterDNSDomain: cluster-1
+  ManagedServices/Dex/Chart:connectors: '{}'
+  ManagedServices/Dex/Chart:staticPasswords: '{}'

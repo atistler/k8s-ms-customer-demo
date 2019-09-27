@@ -121,7 +121,7 @@
     js-yaml "^3.13.1"
     lodash "^4.17.15"
 
-"@k8s-ms-modules-demo/eks@^0.5.3":
+"@k8s-ms-modules-demo/eks@^0.5.2", "@k8s-ms-modules-demo/eks@^0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@k8s-ms-modules-demo/eks/-/eks-0.5.3.tgz#74a950e961e7ee24e0003147f86e304c87cd064b"
   integrity sha512-tO5pPFVW3h4G+61UNB3OKUIGkC0t0S8xB2FJT69NO0JCW+SHsN/i8v84mxBpofJVspPQ9+QhDoQyKk9sdkKVeQ==
