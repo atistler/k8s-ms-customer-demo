@@ -20,6 +20,7 @@
     "mocha": "^6.2.0"
   },
   "scripts": {
+    "lerna:bootstrap": "lerna bootstrap --use-workspaces",
     "commit": "git-cz"
   },
   "config": {
