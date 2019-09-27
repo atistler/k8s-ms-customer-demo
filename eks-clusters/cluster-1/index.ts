@@ -21,8 +21,6 @@ export const externalDns = new ExternalDns(provider, namespace);
 // export const dex = new Dex(provider, namespace);
 
 runTests();
-
-
 /*
 const harbor = new Harbor(cluster, namespace, {
     expose: {
