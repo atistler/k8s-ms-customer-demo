@@ -1,0 +1,24 @@
+{
+  "name": "eks-cluster-1",
+  "description": "Managed services for AWS EKS cluster: eks-cluster-1",
+  "author": "Adam Tistler <adam.tistler@rackspace.com>",
+  "homepage": "https://github.com/atistler/k8s-ms-customer-demo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atistler/k8s-ms-customer-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/atistler/k8s-ms-customer-demo/issues"
+  },
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@k8s-ms-modules-demo/eks": "^0.5.3",
+    "@pulumi/awsx": "^0.18.10",
+    "@pulumi/eks": "^0.18.13",
+    "@pulumi/kubernetes": "^1.0.0",
+    "@pulumi/pulumi": "^1.0.0",
+    "lodash": "^4.17.15"
+  },
+  "keywords": []
+}

@@ -1,19 +1,25 @@
 {
-  "name": "customer-abd-cluster-1",
-  "license": "UNLICENSED",
-  "author": "adam.tistler@rackspace.com",
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "eks-clusters/*"
+  ],
+  "engines": {
+    "node": ">=10.16.0",
+    "yarn": ">=1.17.3"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^8.0.0",
+    "@types/node": "^12.7.8",
     "chai": "^4.2.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "lerna": "^3.16.4",
+    "lerna-update-wizard": "^0.16.0",
     "mocha": "^6.2.0"
   },
-  "dependencies": {
-    "@k8s-ms-modules-demo/eks": "~0.4.1",
-    "@pulumi/aws": "^1.0.0",
-    "@pulumi/awsx": "^0.18.10",
-    "@pulumi/eks": "^0.18.14",
-    "@pulumi/pulumi": "^1.0.0"
+  "scripts": {
+    "commit": "git-cz"
   }
 }

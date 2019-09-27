@@ -1,0 +1,28 @@
+name: NPM Publish
+# This workflow is triggered on pushes to the master branch.
+on:
+  push:
+    branches:
+      - customers/*
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+          registry-url: 'https://registry.npmjs.org'
+      - name: install-pulumi
+        run: curl -fsSL https://get.pulumi.com | sh
+      - name: install-deps
+        run: yarn install
+      - name: login
+        run: pulumi login
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+      - name: select-stack
+        run: pulumi stack select $(echo $GITHUB_REF | sed 's/refs\/heads\///') || pulumi stack init $(echo $GITHUB_REF | sed 's/refs\/heads\///')
+      - name: deploy
+        run: pulumi up -y

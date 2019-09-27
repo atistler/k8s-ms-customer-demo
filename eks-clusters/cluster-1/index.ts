@@ -18,7 +18,7 @@ const namespace = new k8s.core.v1.Namespace('rax-managed', {
 export const externalDns = new ExternalDns(provider, namespace);
 
 // Provision Dex service
-export const dex = new Dex(provider, namespace);
+// export const dex = new Dex(provider, namespace);
 
 runTests();
 

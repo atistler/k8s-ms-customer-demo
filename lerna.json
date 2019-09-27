@@ -1,0 +1,18 @@
+{
+  "packages": [
+    "eks-clusters/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "github-release": true
+    },
+    "version": {
+      "allowBranch": "master"
+    }
+  },
+  "lerna": "2.11.0"
+}

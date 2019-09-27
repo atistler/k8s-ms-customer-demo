@@ -8,3 +8,6 @@ config:
     "/provider", "value": "aws" } ] }'
   aws:region: us-east-1
   k8s-ms-customer-demo:eksClusterName: k8s-ms-demo-eksCluster-bd02c8b
+  ManagedServices/Dex/Chart:clusterDNSDomain: cluster-1
+  ManagedServices/Dex/Chart:connectors: '{}'
+  ManagedServices/Dex/Chart:staticPasswords: '{}'
