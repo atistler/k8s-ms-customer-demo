@@ -1,7 +1,7 @@
 on:
   pull_request:
     paths:
-      - clusters/cluster-2/*
+      - eks-clusters/cluster-2/*
 name: Preview
 jobs:
   build:
@@ -14,6 +14,6 @@ jobs:
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           PULUMI_CI: pr
-          PULUMI_ROOT: clusters/cluster-1/
+          PULUMI_ROOT: eks-clusters/cluster-2/
         with:
           args: preview

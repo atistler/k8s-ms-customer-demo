@@ -3,7 +3,7 @@ on:
     branches:
       - master
     paths:
-      - clusters/cluster-1/*
+      - eks-clusters/cluster-1/*
 name: Update
 jobs:
   build:
@@ -16,6 +16,6 @@ jobs:
       env:
         PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         PULUMI_CI: up
-        PULUMI_ROOT: clusters/cluster-1/
+        PULUMI_ROOT: eks-clusters/cluster-1/
       with:
         args: up
